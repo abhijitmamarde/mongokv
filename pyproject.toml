@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "mkvdb"
-version = "0.1"
+version = "0.2"
 description = "MongoDB-backed async/sync key–value store with a super tiny API."
 keywords = [
     "key-value",
@@ -19,9 +19,7 @@ readme = "README.md"
 authors = [{ name = "Harrison Erd", email = "harrisonerd@gmail.com" }]
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
-dependencies = [
-    "motor>=3.6,<4",
-]
+dependencies = ["pymongo>=4.15.5"]
 
 classifiers = [
     "Framework :: AsyncIO",
@@ -37,6 +35,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://patx.github.io/mkvdb"
 Repository = "https://github.com/patx/mkvdb"
 
