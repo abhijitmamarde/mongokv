@@ -197,7 +197,7 @@
         <li>This project is intentionally small, stable, and boring. Breaking changes are avoided</li>
         <li>mongoKV is not a cache or a Redis replacement — it’s a simple, durable KV API on top of MongoDB</li>
       </ul>
-      <p>Think of it as: <em>&ldquo;I am a lazy programmer and I just want <code>set</code> and <code>get</code> over Mongo.&rdquo;</em> or Mongo as a dict instead of a database.</p>
+      <p>Think of it as <em>MongoDB as a dict instead of a database, for lazy programmers who just want to save some simple data.</em></p>
     </section>
 
     <section class="section" style="border: 0px;">
@@ -205,6 +205,9 @@
       <pre><code class="language-bash">pip install mongokv</code></pre>
       <p>You&rsquo;ll also need a running MongoDB instance and a valid connection URI, for example:</p>
       <pre><code class="language-bash">mongodb://localhost:27017</code></pre>
+      <p>Check out <a href="https://www.mongodb.com/resources/products/fundamentals/mongodb-connection-string">An Introduction to MongoDB Connection Strings</a> 
+         for help on getting a MongoDB instance up and running. A super easy way todo this is to use <a href="https://www.mongodb.com/products/platform/atlas-database">Atlas</a>,
+         that way your instance is in the cloud and you won't need a Mongo server running on your local device.</p>
     </section>
 
     <section class="section" style="border: 0px;">
