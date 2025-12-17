@@ -9,8 +9,8 @@ read the [API Docs and User Guide here](https://patx.github.io/mongokv).
 >>> from mongokv import Mkv
 
 >>> db = Mkv('mongodb://localhost:27071')
->>> db.set('hello', {'name': 'world', 'status': 'green'})
+>>> db.set('hello', 'world')
 
 >>> db.get('hello')
-{'name': 'world', 'status': 'green'}
+'world'
 ```
