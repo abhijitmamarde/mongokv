@@ -80,8 +80,7 @@ class Mkv:
         return doc.get("value")
 
     def remove(self, key: str) -> bool:
-        """
-        Remove a key-value pair."""
+        """Remove a key-value pair."""
         if in_async():
             async def _aremove() -> bool:
                 result = await self.collection.delete_one({"_id": str(key)})
